@@ -1,3 +1,5 @@
 /build
 /node_modules
 /.idea
+/.tmp.drivedownload/
+/.tmp.driveupload/

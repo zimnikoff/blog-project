@@ -7,7 +7,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 //  при первой загрузке, когда язык устанвавливается автоматически
 
 i18n
-    //.use(Backend)
+    .use(Backend)
     //.use(LanguageDetector)
     .use(initReactI18next)
     .init({

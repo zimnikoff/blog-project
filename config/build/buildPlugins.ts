@@ -17,7 +17,7 @@ export function buildPlugins({paths, isDev}: BuildOptions):webpack.WebpackPlugin
         new webpack.DefinePlugin({
             __IS_DEV__: isDev,
         }),
-        isDev && new webpack.HotModuleReplacementPlugin(),
-        isDev && new ReactRefreshWebpackPlugin(),
+        new webpack.HotModuleReplacementPlugin(),
+        new ReactRefreshWebpackPlugin(),
     ]
 }

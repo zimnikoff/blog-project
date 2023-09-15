@@ -1,5 +1,5 @@
 import { render, fireEvent } from '@testing-library/react';
-import { Button, ThemeButton } from './Button';
+import { Button, ButtonTheme } from './Button';
 
 describe('Button component', () => {
     test('renders correctly with default props', () => {
@@ -13,14 +13,14 @@ describe('Button component', () => {
 
     test('renders with custom class and theme', () => {
         const { getByText } = render(
-            <Button className="custom-class" theme={ThemeButton.CLEAR}>
+            <Button className="custom-class" theme={ButtonTheme.CLEAR}>
                 Custom Button
             </Button>,
         );
         const buttonElement = getByText('Custom Button');
 
         expect(buttonElement).toHaveClass('custom-class');
-        expect(buttonElement).toHaveClass(ThemeButton.CLEAR);
+        expect(buttonElement).toHaveClass(ButtonTheme.CLEAR);
     });
 
     test('onClick handler works', () => {

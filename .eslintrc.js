@@ -48,6 +48,8 @@ module.exports = {
         'max-len': ['error', { code: 120, ignoreComments: true }],
         'linebreak-style:': 'off',
         'import/no-extraneous-dependencies': 'off',
+        'linebreak-style': 'off',
+        'arrow-body-style': 'off',
     },
     globals: {
         __IS_DEV__: 'readonly',

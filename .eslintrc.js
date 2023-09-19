@@ -21,6 +21,7 @@ module.exports = {
         'react',
         '@typescript-eslint',
         'i18next',
+        'react-hooks',
     ],
     rules: {
         indent: [2, 4],
@@ -50,15 +51,20 @@ module.exports = {
         'import/no-extraneous-dependencies': 'off',
         'linebreak-style': 'off',
         'arrow-body-style': 'off',
+        'jsx-a11y/no-static-element-interactions': 'off',
+        'jsx-a11y/click-events-have-key-events': 'off',
+        'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/exhaustive-deps': 'error',
     },
     globals: {
         __IS_DEV__: 'readonly',
     },
     overrides: [
         {
-            files: ['**/src/**/*.test.{ts,tsx}'],
+            files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
             rules: {
                 'i18next/no-literal-string': 'off',
+                'max-len': 'off',
             },
         },
     ],

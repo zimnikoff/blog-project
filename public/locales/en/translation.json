@@ -8,6 +8,9 @@
   "О сайте": "About",
   "Короткий язык": "EN",
   "Войти": "Login",
-  "Введите username": "Введите username",
-  "Введите пароль": "Введите пароль"
+  "Введите username": "Enter username",
+  "Введите пароль": "Enter password",
+  "Авторизация": "Authorization",
+  "Вы ввели неверный логин или пароль": "You entered an incorrect username or password",
+    "Выйти": "Logout"
 }

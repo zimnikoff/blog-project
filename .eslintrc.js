@@ -59,6 +59,7 @@ module.exports = {
         'react/self-closing-comp': 'off',
         'object-curly-newline': 'off',
         'lines-between-class-members': 'off',
+        'no-undef': 'off',
     },
     globals: {
         __IS_DEV__: 'readonly',

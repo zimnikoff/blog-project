@@ -1,4 +1,4 @@
-import { classNames } from 'shared/lib/classNames/classNames';
+import { classNames, Mods } from 'shared/lib/classNames/classNames';
 import { ChangeEvent, InputHTMLAttributes, memo, SyntheticEvent, useEffect, useRef, useState } from 'react';
 import cls from './Input.module.scss';
 
@@ -6,9 +6,10 @@ type HTMLInputProps = Omit<InputHTMLAttributes<HTMLInputElement>, 'value' | 'onC
 
 interface InputProps extends HTMLInputProps {
     className?: string;
-    value?: string;
+    value?: string | number;
     onChange?: (value: string) => void;
     autofocus?: boolean;
+    readonly?: boolean;
 }
 
 export const Input = memo((props: InputProps) => {
@@ -19,12 +20,15 @@ export const Input = memo((props: InputProps) => {
         type = 'text',
         placeholder,
         autofocus,
+        readonly = false,
         ...otherProps
     } = props;
 
     const ref = useRef<HTMLInputElement>(null);
     const [isFocused, setIsFocused] = useState(false);
     const [caretPosition, setCaretPosition] = useState(0);
+
+    const isCaretVisible = isFocused && !readonly;
 
     useEffect(() => {
         if (autofocus) {
@@ -51,6 +55,10 @@ export const Input = memo((props: InputProps) => {
 
     const SYMBOL_WIDTH = 8.8;
 
+    const mods: Mods = {
+        [cls.readonly]: readonly,
+    };
+
     return (
         <div className={classNames(cls.InputWrapper, {}, [className])}>
             {placeholder && (
@@ -59,7 +67,7 @@ export const Input = memo((props: InputProps) => {
                 </div>
             )}
 
-            <div className={cls.caretWrapper}>
+            <div className={classNames(cls.caretWrapper, mods)}>
                 <input
                     ref={ref}
                     className={cls.input}
@@ -69,9 +77,10 @@ export const Input = memo((props: InputProps) => {
                     onSelect={onSelect}
                     onFocus={onFocus}
                     onBlur={onBlur}
+                    readOnly={readonly}
                     {...otherProps}
                 />
-                {isFocused && (
+                {isCaretVisible && (
                     <span
                         className={cls.caret}
                         style={{ left: `${SYMBOL_WIDTH * caretPosition}px` }}

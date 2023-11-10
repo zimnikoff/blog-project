@@ -1,0 +1,16 @@
+.label {
+    margin-right: 5px;
+}
+
+.select {
+    background: var(--bg-color);
+    outline: none;
+    color: var(--primary-color);
+    padding: 2px 5px 2px 2px;
+    border: 1px solid var(--primary-color);
+
+    option {
+        color: var(--primary-color);
+        background: var(--bg-color);
+    }
+}

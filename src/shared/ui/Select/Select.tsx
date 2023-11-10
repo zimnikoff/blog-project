@@ -35,7 +35,7 @@ export const Select = memo((props: SelectProps) => {
                 {option.content}
             </option>
         ))
-    ), [options, value]);
+    ), [options]);
 
     const onChangeHandler = (e: ChangeEvent<HTMLSelectElement>) => onChange?.(e.target.value);
 

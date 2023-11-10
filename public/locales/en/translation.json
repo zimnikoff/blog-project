@@ -6,11 +6,14 @@
   "Обновить страницу": "Reload page",
   "Главная": "Main",
   "О сайте": "About",
+  "Профиль": "Profile",
   "Короткий язык": "EN",
   "Войти": "Login",
   "Введите username": "Enter username",
   "Введите пароль": "Enter password",
   "Авторизация": "Authorization",
   "Вы ввели неверный логин или пароль": "You entered an incorrect username or password",
-  "Выйти": "Logout"
+  "Выйти": "Logout",
+  "Валюта": "Currency",
+  "Страна": "Country"
 }

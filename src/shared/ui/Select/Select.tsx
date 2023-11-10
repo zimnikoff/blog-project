@@ -31,7 +31,6 @@ export const Select = memo((props: SelectProps) => {
             <option
                 key={option.value}
                 value={option.value}
-                selected={option.value === value}
             >
                 {option.content}
             </option>
@@ -47,7 +46,7 @@ export const Select = memo((props: SelectProps) => {
                     {`${label}>`}
                 </span>
             )}
-            <select disabled={readonly} onChange={onChangeHandler} className={cls.select}>
+            <select value={value} disabled={readonly} onChange={onChangeHandler} className={cls.select}>
                 {optionsList}
             </select>
         </div>

@@ -4,7 +4,7 @@ import { CurrencySelect } from './CurrencySelect';
 import { Currency } from '../../model/types/Currency';
 
 export default {
-    title: 'entity/CurrencySelect',
+    title: 'entities/CurrencySelect',
     component: CurrencySelect,
     argTypes: {
         backgroundColor: { control: 'color' },

@@ -4,7 +4,7 @@ import { CountrySelect } from './CountrySelect';
 import { Country } from '../../model/types/Country';
 
 export default {
-    title: 'entity/CountrySelect',
+    title: 'entities/CountrySelect',
     component: CountrySelect,
     argTypes: {
         backgroundColor: { control: 'color' },

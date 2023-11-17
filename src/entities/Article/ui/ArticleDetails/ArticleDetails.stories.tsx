@@ -3,6 +3,8 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
 import { ArticleBlockType, ArticleType } from 'entities/Article/model/types/article';
 import { ArticleDetails } from './ArticleDetails';
+import ConsoleImg from '../../../../shared/assets/tests/console.png';
+import JsLogo from '../../../../shared/assets/tests/js-logo.png';
 
 export default {
     title: 'entities/ArticleDetails',
@@ -19,7 +21,7 @@ const article = {
         id: '1',
         title: 'Javascript news',
         subtitle: 'Что нового в JS за 2022 год?',
-        img: 'https://teknotower.com/wp-content/uploads/2020/11/js.png',
+        img: JsLogo,
         views: 1022,
         createdAt: '26.02.2022',
         type: [
@@ -53,7 +55,7 @@ const article = {
             {
                 id: '2',
                 type: ArticleBlockType.IMAGE,
-                src: 'https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png',
+                src: ConsoleImg,
                 title: 'Рисунок 1 - скриншот сайта',
             },
             {
@@ -73,7 +75,7 @@ const article = {
             {
                 id: '8',
                 type: ArticleBlockType.IMAGE,
-                src: 'https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png',
+                src: ConsoleImg,
                 title: 'Рисунок 1 - скриншот сайта',
             },
             {

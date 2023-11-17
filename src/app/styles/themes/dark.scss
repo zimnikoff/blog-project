@@ -1,11 +1,14 @@
 .app-dark-theme {
     --bg-color: #3b3b3b;
     --second-bg-color: #2f2f2f;
-    --third-bg-color: #000000;
-    --text-color: #ffffff;
+    --third-bg-color: #000;
+    --text-color: #fff;
     --second-text-color: #e0e0e0;
-    --third-text-color: #ffffff;
+    --third-text-color: #fff;
 
     // Skeleton
     --skeleton-color: #494949;
+
+    // Code
+    --code-bg: #000;
 }

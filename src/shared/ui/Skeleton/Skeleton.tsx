@@ -6,7 +6,7 @@ interface SkeletonProps {
     className?: string;
     width?: number | string;
     height?: number | string;
-    round?: boolean;
+    isRound?: boolean;
 }
 
 export const Skeleton = memo((props: SkeletonProps) => {
@@ -14,13 +14,13 @@ export const Skeleton = memo((props: SkeletonProps) => {
         className,
         width,
         height,
-        round,
+        isRound,
     } = props;
 
     const styles: CSSProperties = {
         width,
         height,
-        borderRadius: round ? '50%' : undefined,
+        borderRadius: isRound ? '50%' : undefined,
     };
 
     return (

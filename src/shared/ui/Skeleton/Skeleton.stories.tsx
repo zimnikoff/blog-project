@@ -25,7 +25,7 @@ export const Circle = Template.bind({});
 Circle.args = {
     width: 100,
     height: 100,
-    round: true,
+    isRound: true,
 };
 Circle.decorators = [];
 
@@ -40,6 +40,6 @@ export const CircleDark = Template.bind({});
 CircleDark.args = {
     width: 100,
     height: 100,
-    round: true,
+    isRound: true,
 };
 CircleDark.decorators = [ThemeDecorator(Theme.DARK)];

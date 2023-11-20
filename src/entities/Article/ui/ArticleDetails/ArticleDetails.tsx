@@ -63,7 +63,7 @@ export const ArticleDetails = memo(({ className, id }: ArticleDetailsProps) => {
     if (isLoading) {
         content = (
             <>
-                <Skeleton className={cls.avatar} width={200} height={200} round />
+                <Skeleton className={cls.avatar} width={200} height={200} isRound />
                 <Skeleton className={cls.title} width="100%" height={30} />
                 <Skeleton className={cls.skeleton} width="100%" height={30} />
                 <Skeleton className={cls.skeleton} width="100%" height={230} />

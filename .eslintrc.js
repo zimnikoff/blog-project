@@ -60,6 +60,7 @@ module.exports = {
         'object-curly-newline': 'off',
         'lines-between-class-members': 'off',
         'no-undef': 'off',
+        'react/no-array-index-key': 'off',
     },
     globals: {
         __IS_DEV__: true,

@@ -3,7 +3,6 @@
 }
 
 .BIG {
-
     .views {
         margin-left: auto;
         margin-right: 4px;
@@ -43,7 +42,6 @@
         max-height: 200px;
         overflow-y: hidden;
     }
-
 }
 
 .SMALL {
@@ -73,6 +71,7 @@
     &:hover {
         opacity: 0.8;
         transform: scale(1.01);
+
         .date {
             display: block;
         }
@@ -102,5 +101,4 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
-
 }

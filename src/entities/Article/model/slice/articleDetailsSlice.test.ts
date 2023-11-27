@@ -18,6 +18,10 @@ const article: Article = {
     title: '234',
     type: [ArticleType.IT],
     blocks: [],
+    user: {
+        id: '1',
+        username: 'Jorik',
+    },
 };
 
 describe('profileSlice.test', () => {

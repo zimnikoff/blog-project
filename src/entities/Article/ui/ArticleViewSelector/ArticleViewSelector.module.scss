@@ -1,0 +1,5 @@
+.ArticleViewSelector {
+    .notSelected:not(.some), .notSelected:not(.some) path {
+        fill: var(--second-text-color);
+    }
+}

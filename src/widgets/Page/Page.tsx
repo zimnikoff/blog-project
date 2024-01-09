@@ -40,7 +40,6 @@ export const Page = memo(({ className, children, onScrollEnd }: PageProps) => {
             position: e.currentTarget.scrollTop,
             path: pathname,
         }));
-        console.log('scroll');
     }, 500);
 
     return (

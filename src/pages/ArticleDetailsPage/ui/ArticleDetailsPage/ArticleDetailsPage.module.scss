@@ -4,4 +4,12 @@
 
 .commentTitle {
     margin-top: 24px;
+    padding-bottom: 20px;
+}
+
+.recommendations {
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding-bottom: 20px;
 }

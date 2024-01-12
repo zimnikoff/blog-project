@@ -16,6 +16,12 @@
     }
 }
 
+.secondary {
+    .title, .text {
+        color: var(--second-text-color);
+    }
+}
+
 .left {
     text-align: left;
 }

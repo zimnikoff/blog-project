@@ -32,6 +32,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
     if (authData) {
         return (
             <header className={classNames(cls.Navbar, {}, [className])}>
+                <Text className={cls.appName} title={t('SmartBlogger')} theme={TextTheme.SECONDARY} />
                 <Button
                     theme={ButtonTheme.CLEAR_INVERTED}
                     className={cls.links}

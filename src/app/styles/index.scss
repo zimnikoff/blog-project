@@ -18,3 +18,23 @@
 .content-page {
     display: flex;
 }
+
+// Scrollbar
+
+*::-webkit-scrollbar {
+    width: 12px;
+    height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--second-bg-color);
+    border-radius: 20px;
+}
+
+* {
+    scrollbar-color: var(--bg-color) var(--second-bg-color);
+}

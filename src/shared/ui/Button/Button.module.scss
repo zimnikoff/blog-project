@@ -1,10 +1,11 @@
 .Button {
     padding: 6px 15px;
-    cursor: pointer;
+
     color: var(--text-color);
 
-    &:hover {
+    &:hover:not(.disabled) {
         opacity: 0.5;
+        cursor: pointer;
     }
 }
 

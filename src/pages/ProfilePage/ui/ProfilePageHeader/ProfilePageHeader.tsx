@@ -8,11 +8,7 @@ import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { getUserAuthData } from 'entities/User';
 import { HStack } from 'shared/ui/Stack/HStack/HStack';
 
-interface ProfilePageHeaderProps {
-    className?: string;
-}
-
-export const ProfilePageHeader = ({ className }: ProfilePageHeaderProps) => {
+export const ProfilePageHeader = () => {
     const { t } = useTranslation('profile');
     const authData = useSelector(getUserAuthData);
     const profileData = useSelector(getProfileData);

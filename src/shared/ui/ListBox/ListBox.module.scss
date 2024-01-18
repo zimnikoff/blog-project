@@ -20,8 +20,22 @@
     z-index: 1;
 }
 
-.top {
+.top-right {
     bottom: 100%;
+    left: 0
+}
+
+.top-left {
+    bottom: 100%;
+    right: 0;
+}
+
+.bottom-right {
+    left: 0;
+}
+
+.bottom-left {
+    right: 0;
 }
 
 .item {

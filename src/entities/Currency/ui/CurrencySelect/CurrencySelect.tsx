@@ -38,7 +38,7 @@ export const CurrencySelect = memo((props: CurrencySelectProps) => {
             defaultValue={t('Валюта')}
             className={className}
             readonly={readonly}
-            direction="top"
+            direction="top-right"
             label={t('Валюта')}
         />
     );

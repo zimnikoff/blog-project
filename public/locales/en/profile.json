@@ -16,5 +16,6 @@
     "Имя и фамилия обязательны": "First and last name are required",
     "Некорректный возраст": "Incorrect age",
     "Некорректная страна": "Incorrect country",
-    "Серверная ошибка при сохранении": "Server error when saving"
+    "Серверная ошибка при сохранении": "Server error when saving",
+    "Произошла ошибка": "Произошла ошибка"
 }

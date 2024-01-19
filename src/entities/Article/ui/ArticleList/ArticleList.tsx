@@ -52,7 +52,7 @@ export const ArticleList = memo((props: ArticleListProps) => {
         const fromIndex = index * itemsPerRow;
         const toIndex = Math.min(fromIndex + itemsPerRow, articles.length);
 
-        for (let i = fromIndex; i < toIndex; i++) {
+        for (let i = fromIndex; i < toIndex; i += 1) {
             items.push(
                 <ArticleListItem
                     article={articles[i]}

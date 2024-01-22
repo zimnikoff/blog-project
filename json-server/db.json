@@ -686,15 +686,28 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN",
+      "roles": [
+        "ADMIN"
+      ],
       "avatar": "https://bipbap.ru/wp-content/uploads/2022/11/1652235714_41-kartinkin-net-p-prikolnie-kartinki-dlya-stima-44.jpg"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER",
+      "roles": [
+        "USER"
+      ],
       "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcoWP1oG6SbM819PChYaTqsypJ6-IamA8qvA&usqp=CAU"
+    },
+    {
+      "id": "3",
+      "username": "manager",
+      "password": "123",
+      "roles": [
+        "MANAGER"
+      ],
+      "avatar": "https://avatars.dzeninfra.ru/get-zen_doc/2977209/pub_5eb2e732b95e7e69bd2eee71_5eb671ee9ad7a1537819ecfa/scale_1200"
     }
   ],
   "profile": [
@@ -719,6 +732,17 @@
       "city": "Moscow",
       "username": "user",
       "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcoWP1oG6SbM819PChYaTqsypJ6-IamA8qvA&usqp=CAU"
+    },
+    {
+      "id": "3",
+      "firstname": "Дмитрий",
+      "lastname": "Дмитриев",
+      "age": 48,
+      "currency": "USD",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "user",
+      "avatar": "https://avatars.dzeninfra.ru/get-zen_doc/2977209/pub_5eb2e732b95e7e69bd2eee71_5eb671ee9ad7a1537819ecfa/scale_1200"
     }
   ]
 }

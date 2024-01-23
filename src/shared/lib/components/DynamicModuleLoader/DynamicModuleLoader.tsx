@@ -1,4 +1,4 @@
-import { FC, ReactElement, useEffect } from 'react';
+import { ReactNode, useEffect } from 'react';
 import { useDispatch, useStore } from 'react-redux';
 import { ReduxStoreWithManager } from 'app/providers/StoreProvider';
 import { StateSchemaKey } from 'app/providers/StoreProvider/config/StateSchema';
@@ -10,11 +10,11 @@ export type ReducersList = {
 
 interface DynamicModuleLoaderProps {
     reducers: ReducersList;
-    children: ReactElement;
+    children?: ReactNode;
     removeAfterUnmount?: boolean;
 }
 
-export const DynamicModuleLoader: FC<DynamicModuleLoaderProps> = (props) => {
+export const DynamicModuleLoader = (props: DynamicModuleLoaderProps) => {
     const {
         children,
         reducers,
@@ -44,5 +44,6 @@ export const DynamicModuleLoader: FC<DynamicModuleLoaderProps> = (props) => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    return children;
+    // eslint-disable-next-line i18next/no-literal-string
+    return <>children</>;
 };

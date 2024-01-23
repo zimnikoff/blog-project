@@ -26,7 +26,7 @@ import CalendarIcon from '../../../../shared/assets/icons/calendar-20-20.svg';
 
 interface ArticleDetailsProps {
     className?: string;
-    id: string;
+    id?: string;
 }
 
 const reducers: ReducersList = {

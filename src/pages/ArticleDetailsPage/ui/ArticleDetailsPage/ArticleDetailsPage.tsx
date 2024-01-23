@@ -1,4 +1,3 @@
-import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { memo } from 'react';
 import { ArticleDetails } from 'entities/Article';
@@ -23,16 +22,7 @@ const reducersList: ReducersList = {
 };
 
 const ArticleDetailsPage = ({ className }: ArticleDetailsPageProps) => {
-    const { t } = useTranslation('article');
     const { id } = useParams<{ id: string }>();
-
-    if (!id) {
-        return (
-            <div className={classNames(cls.ArticleDetailsPage, {}, [className])}>
-                {t('Статья не найдена')}
-            </div>
-        );
-    }
 
     return (
         <DynamicModuleLoader reducers={reducersList} removeAfterUnmount>
@@ -44,7 +34,6 @@ const ArticleDetailsPage = ({ className }: ArticleDetailsPageProps) => {
                     <ArticleDetailsComments id={id} />
                 </VStack>
             </Page>
-
         </DynamicModuleLoader>
     );
 };

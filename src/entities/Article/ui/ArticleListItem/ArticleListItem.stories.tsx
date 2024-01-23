@@ -3,7 +3,8 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 import img from 'shared/assets/tests/js-logo.png';
 import avatar from 'shared/assets/tests/storybook.jpg';
-import { Article, ArticleView } from '../../model/types/article';
+import { ArticleView } from '../../model/consts/articleConsts';
+import { Article } from '../../model/types/article';
 import { ArticleListItem } from './ArticleListItem';
 
 export default {

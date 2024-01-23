@@ -12,7 +12,8 @@ import { ArticleCodeBlockComponent } from 'entities/Article/ui/ArticleCodeBlockC
 import { ArticleImageBlockComponent } from 'entities/Article/ui/ArticleImageBlockComponent/ArticleImageBlockComponent';
 import { ArticleTextBlockComponent } from 'entities/Article/ui/ArticleTextBlockComponent/ArticleTextBlockComponent';
 import { HStack, VStack } from 'shared/ui/Stack';
-import { ArticleBlock, ArticleBlockType } from '../../model/types/article';
+import { ArticleBlockType } from 'entities/Article/model/consts/articleConsts';
+import { ArticleBlock } from '../../model/types/article';
 import {
     getArticleDetailsData,
     getArticleDetailsError,

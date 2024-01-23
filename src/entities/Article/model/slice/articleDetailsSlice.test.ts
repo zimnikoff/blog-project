@@ -1,7 +1,6 @@
-import { Article, ArticleDetailsSchema } from 'entities/Article';
+import { Article, ArticleDetailsSchema, ArticleType } from 'entities/Article';
 
 import { fetchArticleById } from 'entities/Article/model/services/fetchArticleById';
-import { ArticleType } from 'entities/Article/model/types/article';
 import { articleDetailsReducer } from './articleDetailsSlice';
 
 const data = {

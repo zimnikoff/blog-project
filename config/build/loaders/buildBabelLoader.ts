@@ -16,6 +16,7 @@ export function buildBabelLoader({ isDev, isTsx }: BuildBabelLoaderProps) {
                 plugins: [
                     ['@babel/plugin-transform-typescript', { isTsx }],
                     '@babel/plugin-transform-runtime',
+                    isTsx && [babelRemovePropsPlugin, { props: ['data-testid'] }],
                     isDev && require.resolve('react-refresh/babel'),
                 ].filter(Boolean),
             },

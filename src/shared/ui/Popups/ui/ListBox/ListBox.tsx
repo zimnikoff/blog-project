@@ -5,6 +5,7 @@ import { Button } from 'shared/ui/Button/Button';
 import { HStack } from 'shared/ui/Stack';
 import { DropDownDirection } from 'shared/types/ui';
 import cls from './ListBox.module.scss';
+import popupCls from '../../styles/popup.module.scss';
 
 export interface ListBoxItem {
     value: string;
@@ -33,7 +34,7 @@ export function ListBox(props:ListBoxProps) {
             {label && <span>{`${label}>`}</span>}
             <HListBox
                 as="div"
-                className={classNames(cls.ListBox, {}, [className])}
+                className={classNames(popupCls.popup, {}, [className])}
                 value={value}
                 onChange={onChange}
                 disabled={readonly}
@@ -41,7 +42,7 @@ export function ListBox(props:ListBoxProps) {
                 <HListBox.Button className={cls.trigger}>
                     <Button disabled={readonly}>{value ?? defaultValue}</Button>
                 </HListBox.Button>
-                <HListBox.Options className={classNames(cls.options, {}, [cls[direction]])}>
+                <HListBox.Options className={classNames(cls.options, {}, [popupCls[direction]])}>
                     {items.map((item) => (
                         <HListBox.Option
                             key={item.value}

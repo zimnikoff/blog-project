@@ -5,6 +5,7 @@ import { DropDownDirection } from 'shared/types/ui';
 import { AppLink } from 'shared/ui/AppLink/AppLink';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import cls from './Dropdown.module.scss';
+import popupCls from '../../styles/popup.module.scss';
 
 export interface DropDownItem {
     disabled?: boolean;
@@ -23,11 +24,11 @@ interface DropdownProps {
 export function Dropdown(props: DropdownProps) {
     const { className, items, trigger, direction = 'bottom-right' } = props;
     return (
-        <Menu as="div" className={classNames(cls.Dropdown, {}, [className])}>
-            <Menu.Button className={cls.btn}>
+        <Menu as="div" className={classNames('', {}, [className, popupCls.popup])}>
+            <Menu.Button className={popupCls.trigger}>
                 {trigger}
             </Menu.Button>
-            <Menu.Items className={classNames(cls.menu, {}, [className, cls[direction]])}>
+            <Menu.Items className={classNames(cls.menu, {}, [className, popupCls[direction]])}>
                 {items.map((item) => {
                     const content = ({ active }: {active: boolean}) => (
                         <Button

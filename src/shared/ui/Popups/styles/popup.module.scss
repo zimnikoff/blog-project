@@ -1,0 +1,33 @@
+.trigger {
+    background: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup {
+    position: relative;
+}
+
+.top-right {
+    bottom: 100%;
+    left: 0
+}
+
+.top-left {
+    bottom: 100%;
+    right: 0;
+}
+
+.bottom-right {
+    left: 0;
+}
+
+.bottom-left {
+    right: 0;
+}

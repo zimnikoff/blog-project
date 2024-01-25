@@ -7,3 +7,13 @@
 .Icon path:not(.isStroke path) {
     fill: var(--text-color);
 }
+
+.isStroke,
+.isStroke path {
+    stroke: var(--text-color);
+}
+
+.Inverted:not(.isStroke),
+.Inverted path:not(.isStroke path) {
+    fill: var(--third-text-color);
+}

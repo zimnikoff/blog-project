@@ -1,0 +1,12 @@
+.notifications {
+    max-height: 250px;
+    width: 500px;
+    overflow-y: auto;
+    -ms-overflow-style: none; /* IE и Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Chrome, Safari и Opera  */
+.notifications::-webkit-scrollbar {
+    display: none;
+}

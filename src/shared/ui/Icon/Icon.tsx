@@ -6,13 +6,15 @@ interface IconProps {
     className?: string;
     Svg: React.VFC<React.SVGProps<SVGSVGElement>>;
     isStroke?: boolean;
+    inverted?: boolean;
 }
-export const Icon = memo(({ className, Svg, isStroke }: IconProps) => {
+export const Icon = memo(({ className, Svg, isStroke, inverted }: IconProps) => {
     const mods: Mods = {
         [cls.isStroke]: isStroke,
+        [cls.Inverted]: inverted,
     };
 
     return (
-        <Svg className={classNames(cls.Icon, mods, [className])} />
+        <Svg className={classNames(inverted ? cls.inverted : cls.Icon, mods, [className])} />
     );
 });

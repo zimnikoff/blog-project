@@ -4,8 +4,7 @@
 @import "themes/dark";
 @import "themes/afternoon";
 
-.app,
-.app-modal {
+.app, .app-modal, .app-drawer {
     font: var(--font-m);
     color: var(--text-color);
 }

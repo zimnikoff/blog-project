@@ -1,8 +1,8 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
-import img from 'shared/assets/tests/js-logo.png';
-import avatar from 'shared/assets/tests/storybook.jpg';
+import img from '@/shared/assets/tests/js-logo.png';
+import avatar from '@/shared/assets/tests/storybook.jpg';
 import { ArticleView } from '../../model/consts/articleConsts';
 import { Article } from '../../model/types/article';
 import { ArticleListItem } from './ArticleListItem';

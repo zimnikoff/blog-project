@@ -21,4 +21,4 @@ export {
     isUserManager,
     getUserRoles,
 } from './model/selectors/roleSelectors';
-export { UserRole } from 'entities/User/model/consts/userConsts';
+export { UserRole } from '@/entities/User/model/consts/userConsts';

@@ -1,7 +1,7 @@
 .panel {
     background: var(--second-bg-color);
     position: absolute;
-    z-index: 1;
+    z-index: var(--popover-z-index);
     border-radius: 8px;
     border: 1px solid var(--text-color);
     flex-direction: column;

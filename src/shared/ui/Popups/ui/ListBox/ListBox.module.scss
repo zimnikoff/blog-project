@@ -13,7 +13,7 @@
     flex-direction: column;
     overflow: hidden;
     min-width: 100%;
-    z-index: 1;
+    z-index: var(--popover-z-index);
 }
 
 .item {

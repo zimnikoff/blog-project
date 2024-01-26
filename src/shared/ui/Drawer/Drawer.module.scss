@@ -4,7 +4,7 @@
     bottom: 0;
     right: 0;
     left: 0;
-    z-index: 100;
+    z-index: var(--popover-z-index);
     display: flex;
     align-items: flex-end;
 }
@@ -12,7 +12,7 @@
 .opened {
     pointer-events: auto;
     opacity: 1;
-    z-index: var(--modal-z-index);
+    z-index: var(--popover-z-index);
 
     .content {
         transform: translateY(0%);
@@ -20,7 +20,7 @@
 }
 
 .sheet {
-    z-index: var(--modal-z-index);
+    z-index: var(--popover-z-index);
     position: fixed;
     left: 2vw;
     height: calc(100vh + 100px);

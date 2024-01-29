@@ -713,6 +713,12 @@
       "userId": "1",
       "text": "2222222",
       "id": "tm5L130"
+    },
+    {
+      "articleId": "7",
+      "userId": "1",
+      "text": "123",
+      "id": "SNwXd__"
     }
   ],
   "users": [
@@ -777,6 +783,31 @@
       "city": "Moscow",
       "username": "user",
       "avatar": "https://avatars.dzeninfra.ru/get-zen_doc/2977209/pub_5eb2e732b95e7e69bd2eee71_5eb671ee9ad7a1537819ecfa/scale_1200"
+    }
+  ],
+  "article-ratings": [
+    {
+      "userId": "1",
+      "articleId": "6",
+      "rate": 3,
+      "feedback": "",
+      "id": 1
+    }
+  ],
+  "profile-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "profileId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "profileId": "2"
     }
   ]
 }

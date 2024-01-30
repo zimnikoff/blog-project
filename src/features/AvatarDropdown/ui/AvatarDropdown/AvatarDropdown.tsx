@@ -6,7 +6,7 @@ import { Avatar } from '@/shared/ui/Avatar/Avatar';
 import { Dropdown } from '@/shared/ui/Popups';
 import { getUserAuthData, isUserAdmin, isUserManager, userActions } from '@/entities/User';
 import cls from './AvatarDropdown.module.scss';
-import { RoutePath } from '@/shared/const/router';
+import { getRouteAdminPanel, getRouteProfile } from '@/shared/const/router';
 
 interface AvatarDropdownProps {
     className?: string;
@@ -34,11 +34,11 @@ export const AvatarDropdown = memo(({ className }: AvatarDropdownProps) => {
                 {
                     content: t('Профиль'),
                     // eslint-disable-next-line no-unsafe-optional-chaining
-                    href: RoutePath.profile + authData?.id,
+                    href: getRouteProfile(authData.id),
                 },
                 ...(isAdminPanelAvailable ? [{
                     content: t('Админка'),
-                    href: RoutePath.admin_panel,
+                    href: getRouteAdminPanel(),
                 }] : []),
                 {
                     content: t('Выйти'),

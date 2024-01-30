@@ -30,11 +30,29 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
 export const Button = memo((props: ButtonProps) => {
     const {
         className,
+        /**
+         * Содержимое кнопки
+         */
         children,
+        /**
+         * Тема кнопки. Отвечает за визуал (в рамке, без стилей, противоположный теме приложения цвет и тд)
+         */
         theme = ButtonTheme.OUTLINE,
+        /**
+         * Флаг, делающий кнопку квадратной
+         */
         square,
+        /**
+         * Флаг, отвечающий за работу кнопки
+         */
         disabled,
+        /**
+         * Флаг, отвечающий за работу кнопки
+         */
         size = ButtonSize.M,
+        /**
+         * Увеличивает кнопку на всю свободную ширину
+         */
         fullWidth = false,
         ...otherProps
     } = props;

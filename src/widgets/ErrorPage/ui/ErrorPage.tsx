@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Button } from '@/shared/ui/Button/Button';
-import { useTheme } from '@/app/providers/ThemeProvider';
 import cls from './ErrorPage.module.scss';
+import { useTheme } from '@/shared/lib/hooks/useTheme/useTheme';
 
 interface ErrorPageProps {
     className?: string;

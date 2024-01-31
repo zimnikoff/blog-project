@@ -6,6 +6,7 @@
 .Icon:not(.isStroke),
 .Icon path:not(.isStroke path) {
     fill: var(--text-color);
+    color: var(--text-color)
 }
 
 .isStroke,
@@ -16,4 +17,5 @@
 .Inverted:not(.isStroke),
 .Inverted path:not(.isStroke path) {
     fill: var(--third-text-color);
+    color: var(--third-text-color);
 }

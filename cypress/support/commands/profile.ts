@@ -12,7 +12,7 @@ export const resetProfile = (profileId: string) => {
         headers: { Authorization: 'asasf' },
         body: {
             id: '4',
-            firstname: 'test',
+            first: 'test',
             lastname: 'user',
             age: 465,
             currency: 'EUR',

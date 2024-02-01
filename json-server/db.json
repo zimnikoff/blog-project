@@ -792,6 +792,17 @@
       "city": "Moscow",
       "username": "user",
       "avatar": "https://avatars.dzeninfra.ru/get-zen_doc/2977209/pub_5eb2e732b95e7e69bd2eee71_5eb671ee9ad7a1537819ecfa/scale_1200"
+    },
+    {
+      "id": "4",
+      "firstname": "test",
+      "lastname": "user",
+      "age": 465,
+      "currency": "EUR",
+      "country": "Ukraine",
+      "city": "Moscow",
+      "username": "testuser",
+      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     }
   ],
   "article-ratings": [

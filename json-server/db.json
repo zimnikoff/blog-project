@@ -729,6 +729,10 @@
       "roles": [
         "ADMIN"
       ],
+      "features": {
+        "isArticleRatingEnabled": true,
+        "isCounterEnabled": true
+      },
       "avatar": "https://bipbap.ru/wp-content/uploads/2022/11/1652235714_41-kartinkin-net-p-prikolnie-kartinki-dlya-stima-44.jpg"
     },
     {
@@ -738,6 +742,10 @@
       "roles": [
         "USER"
       ],
+      "features": {
+        "isArticleRatingEnabled": false,
+        "isCounterEnabled": false
+      },
       "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcoWP1oG6SbM819PChYaTqsypJ6-IamA8qvA&usqp=CAU"
     },
     {
@@ -747,6 +755,10 @@
       "roles": [
         "MANAGER"
       ],
+      "features": {
+        "isArticleRatingEnabled": false,
+        "isCounterEnabled": true
+      },
       "avatar": "https://avatars.dzeninfra.ru/get-zen_doc/2977209/pub_5eb2e732b95e7e69bd2eee71_5eb671ee9ad7a1537819ecfa/scale_1200"
     },
     {
@@ -756,6 +768,10 @@
       "roles": [
         "ADMIN"
       ],
+      "features": {
+        "isArticleRatingEnabled": true,
+        "isCounterEnabled": false
+      },
       "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     }
   ],

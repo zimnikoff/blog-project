@@ -73,6 +73,8 @@ module.exports = {
         'lines-between-class-members': 'off',
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
+        'operator-linebreak': 'off',
+        'react/no-unstable-nested-components': 'warn',
     },
     globals: {
         __IS_DEV__: true,

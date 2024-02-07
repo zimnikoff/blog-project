@@ -4,7 +4,22 @@ import svgr from 'vite-plugin-svgr';
 
 export default defineConfig({
     plugins: [
-        svgr({ exportAsDefault: true }),
+        svgr({
+            exportAsDefault: true,
+            svgrOptions: {
+                icon: true,
+                svgoConfig: {
+                    plugins: [
+                        {
+                            name: 'convertColors',
+                            params: {
+                                currentColor: true,
+                            },
+                        },
+                    ],
+                },
+            },
+        }),
         react(),
     ],
     resolve: {

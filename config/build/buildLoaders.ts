@@ -7,9 +7,23 @@ export function buildLoaders(options: BuildOptions):webpack.RuleSetRule[] {
     const cssLoader = buildCssLoader(options.isDev);
 
     const svgrLoader = {
-        test: /\.svg$/i,
-        issuer: /\.[jt]sx?$/,
-        use: ['@svgr/webpack'],
+        test: /\.svg$/,
+        use: [{
+            loader: '@svgr/webpack',
+            options: {
+                icon: true,
+                svgoConfig: {
+                    plugins: [
+                        {
+                            name: 'convertColors',
+                            params: {
+                                currentColor: true,
+                            },
+                        },
+                    ],
+                },
+            },
+        }],
     };
 
     const fileLoader = {

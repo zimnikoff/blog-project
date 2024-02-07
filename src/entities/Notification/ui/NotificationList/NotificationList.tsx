@@ -1,8 +1,8 @@
 import { memo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { VStack } from '@/shared/ui/Stack';
-import { Skeleton } from '@/shared/ui/Skeleton/Skeleton';
+import { VStack } from '@/shared/ui/deprecated/Stack';
+import { Skeleton } from '@/shared/ui/deprecated/Skeleton/Skeleton';
 import { useGetNotifications } from '../../api/notificationApi';
 import cls from './NotificationList.module.scss';
 import { NotificationItem } from '../NotificationItem/NotificationItem';

@@ -1,6 +1,6 @@
 import { lazy, Suspense } from 'react';
 import { ArticleRatingProps } from '@/features/articleRating/ui/ArticleRating/ArticleRating';
-import { Skeleton } from '@/shared/ui/Skeleton/Skeleton';
+import { Skeleton } from '@/shared/ui/deprecated/Skeleton/Skeleton';
 
 const ArticleRatingLazy = lazy(() => new Promise((resolve) => {
     // @ts-ignore

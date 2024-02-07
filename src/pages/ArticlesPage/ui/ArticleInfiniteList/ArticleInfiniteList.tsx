@@ -11,7 +11,7 @@ import {
 } from '@/pages/ArticlesPage/model/selectors/artilclesPageSelectors';
 import { useInitialEffect } from '@/shared/lib/hooks/useInitialEffect/useInitialEffect';
 import { initArticlesPage } from '@/pages/ArticlesPage/model/services/initArticlesPage/initArticlesPage';
-import { Text } from '@/shared/ui/Text/Text';
+import { Text } from '@/shared/ui/deprecated/Text/Text';
 import { ArticleList } from '@/entities/Article';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 import cls from './ArticleInfiniteList.module.scss';

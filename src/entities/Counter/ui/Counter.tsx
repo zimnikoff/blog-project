@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import { useCounterActions } from '../model/slice/counterSlice';
 import { useCounterValue } from '../model/selectors/getCounterValue/getCounterValue';
-import { Button } from '@/shared/ui/Button/Button';
+import { Button } from '@/shared/ui/deprecated/Button/Button';
 
 export const Counter = () => {
     const dispatch = useDispatch();

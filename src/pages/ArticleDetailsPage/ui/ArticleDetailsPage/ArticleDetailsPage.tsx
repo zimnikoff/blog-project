@@ -8,7 +8,7 @@ import { Page } from '@/widgets/Page/Page';
 import {
     ArticleDetailsPageHeader,
 } from '@/pages/ArticleDetailsPage/ui/ArticleDetailsPageHeader/ArticleDetailsPageHeader';
-import { VStack } from '@/shared/ui/Stack';
+import { VStack } from '@/shared/ui/deprecated/Stack';
 import { ArticleRecommendationsList } from '@/features/articleRecommendationsList';
 import { ArticleDetailsComments } from '@/pages/ArticleDetailsPage/ui/ArticleDetailsComments/ArticleDetailsComments';
 import cls from './ArticleDetailsPage.module.scss';
@@ -16,7 +16,7 @@ import { articleDetailsPageReducer } from '../../model/slices';
 import { ArticleRating } from '@/features/articleRating';
 import { ToggleFeatures } from '@/shared/lib/features';
 
-import { Card } from '@/shared/ui/Card/Card';
+import { Card } from '@/shared/ui/deprecated/Card/Card';
 
 interface ArticleDetailsPageProps {
     className?: string;

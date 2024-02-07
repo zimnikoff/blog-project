@@ -731,10 +731,11 @@
       ],
       "features": {
         "isArticleRatingEnabled": true,
-        "isCounterEnabled": true
+        "isCounterEnabled": true,
+        "isAppRedesigned": true
       },
       "jsonSettings": {
-        "theme": "app-light-theme",
+        "theme": "app-dark-theme",
         "isFirstVisit": "true",
         "settingsPageHasBeenOpen": "true",
         "isArticlePageWasOpened": true
@@ -753,7 +754,7 @@
         "isCounterEnabled": false
       },
       "jsonSettings": {
-        "theme": "app-dark-theme",
+        "theme": "app-light-theme",
         "isArticlePageWasOpened": true
       },
       "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcoWP1oG6SbM819PChYaTqsypJ6-IamA8qvA&usqp=CAU"

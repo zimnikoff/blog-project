@@ -56,6 +56,8 @@ module.exports = {
                     'role',
                     'as',
                     'feature',
+                    'variant',
+                    'color',
                 ],
             },
         ],
@@ -76,6 +78,7 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'operator-linebreak': 'off',
         'react/no-unstable-nested-components': 'warn',
+        variant: 'off',
     },
     globals: {
         __IS_DEV__: true,

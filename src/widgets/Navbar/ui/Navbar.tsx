@@ -1,13 +1,13 @@
 import { memo, useCallback, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
+import { HStack } from '@/shared/ui/redesigned/Stack';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Button, ButtonTheme } from '@/shared/ui/deprecated/Button/Button';
 import { getUserAuthData } from '@/entities/User';
 import { LoginModal } from '@/features/AuthByUsername';
 import { Text, TextTheme } from '@/shared/ui/deprecated/Text/Text';
 import { AppLink, AppLinkTheme } from '@/shared/ui/deprecated/AppLink/AppLink';
-import { HStack } from '@/shared/ui/deprecated/Stack';
 import { NotificationButton } from '@/features/NotificationButton';
 import { AvatarDropdown } from '@/features/AvatarDropdown';
 import cls from './Navbar.module.scss';

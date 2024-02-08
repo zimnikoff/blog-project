@@ -14,7 +14,6 @@ export const LangSwitcher = memo(({ className, short }: LangSwitcherProps) => {
     const { t, i18n } = useTranslation();
 
     const toggle = async () => {
-        console.log(i18n.changeLanguage);
         i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru');
     };
 

@@ -1,9 +1,9 @@
 import { memo, useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BrowserView, MobileView } from 'react-device-detect';
+import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { Card } from '@/shared/ui/deprecated/Card/Card';
-import { HStack, VStack } from '@/shared/ui/deprecated/Stack';
 import { StarRating } from '@/shared/ui/deprecated/StarRating/StarRating';
 import { Modal } from '@/shared/ui/deprecated/Modal/Modal';
 import { Input } from '@/shared/ui/deprecated/Input/Input';

@@ -80,6 +80,7 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'operator-linebreak': 'off',
         'react/no-unstable-nested-components': 'warn',
+        'consistent-return': 'off',
     },
     globals: {
         __IS_DEV__: true,

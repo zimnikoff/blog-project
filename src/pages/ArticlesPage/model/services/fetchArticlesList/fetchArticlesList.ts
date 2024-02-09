@@ -9,7 +9,7 @@ import {
     getArticlesPageSearch,
     getArticlesPageSort,
     getArticlesPageType,
-} from '../../selectors/artilclesPageSelectors';
+} from '../../selectors/articlesPageSelectors';
 
 interface FetchArticlesListProps {
     replace?: boolean;

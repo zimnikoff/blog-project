@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import img from '@/shared/assets/tests/js-logo.png';
+
 import { ArticleView } from '../../model/consts/articleConsts';
 import { ArticleList } from './ArticleList';
 import { Article } from '../../model/types/article';
@@ -13,26 +13,23 @@ export default {
     },
 } as ComponentMeta<typeof ArticleList>;
 
-const Template: ComponentStory<typeof ArticleList> = (args) => <ArticleList {...args} />;
+const Template: ComponentStory<typeof ArticleList> = (args) => (
+    <ArticleList {...args} />
+);
 
 const article = {
     id: '1',
     title: 'Javascript news asfasjf asfjkask f',
     subtitle: 'Что нового в JS за 2022 год?',
-    img,
+    img: 'https://teknotower.com/wp-content/uploads/2020/11/js.png',
     views: 1022,
     createdAt: '26.02.2022',
     user: {
         id: '1',
         username: 'Ulbi tv',
-        avatar: '',
+        avatar: 'https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg',
     },
-    type: [
-        'IT',
-        'SCIENCE',
-        'POLITICS',
-        'ECONOMICS',
-    ],
+    type: ['IT', 'SCIENCE', 'POLITICS', 'ECONOMICS'],
     blocks: [
         {
             id: '1',
@@ -111,24 +108,20 @@ LoadingSmall.args = {
 
 export const ListSmall = Template.bind({});
 ListSmall.args = {
-    articles: new Array(9)
-        .fill(0)
-        .map((item, index) => ({
-            ...article,
-            id: String(index),
-        })),
+    articles: new Array(9).fill(0).map((item, index) => ({
+        ...article,
+        id: String(index),
+    })),
     isLoading: false,
     view: ArticleView.SMALL,
 };
 
 export const ListBig = Template.bind({});
 ListBig.args = {
-    articles: new Array(9)
-        .fill(0)
-        .map((item, index) => ({
-            ...article,
-            id: String(index),
-        })),
+    articles: new Array(9).fill(0).map((item, index) => ({
+        ...article,
+        id: String(index),
+    })),
     isLoading: false,
     view: ArticleView.BIG,
 };

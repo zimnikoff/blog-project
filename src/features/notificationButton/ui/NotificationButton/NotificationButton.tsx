@@ -56,7 +56,7 @@ export const NotificationButton = memo((props: NotificationButtonProps) => {
                             className={classNames(cls.NotificationButton, {}, [
                                 className,
                             ])}
-                            direction="bottom left"
+                            direction="bottom-left"
                             trigger={trigger}
                         >
                             <NotificationList className={cls.notifications} />

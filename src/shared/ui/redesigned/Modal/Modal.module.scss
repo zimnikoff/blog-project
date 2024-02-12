@@ -7,7 +7,6 @@
     opacity: 0;
     pointer-events: none;
     z-index: var(--modal-z-index);
-    color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,10 +16,22 @@
     max-width: 60%;
     padding: 20px;
     border-radius: 15px;
-    background-color: var(--bg-color);
     transform: scale(0);
     transition: 0.2s transform;
     z-index: var(--modal-z-index);
+    color: var(--text-color);
+}
+
+.modalNew {
+    .content {
+        background-color: var(--bg-color);
+    }
+}
+
+.modalOld {
+    .content {
+        background-color: var(--bg-color);
+    }
 }
 
 .opened {

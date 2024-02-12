@@ -5,6 +5,7 @@ import { Overlay } from '@/shared/ui/redesigned/Overlay/Overlay';
 import { useModal } from '@/shared/lib/hooks/useModal/useModal';
 import cls from './Modal.module.scss';
 import { useTheme } from '@/shared/lib/hooks/useTheme/useTheme';
+import { toggleFeatures } from '@/shared/lib/features';
 
 interface ModalProps {
     children: ReactNode;
@@ -45,8 +46,22 @@ export const Modal = (props: ModalProps) => {
     }
 
     return (
-        <Portal>
-            <div className={classNames(cls.Modal, mods, ['app-modal', className, theme])}>
+        <Portal element={document.getElementById('app') ?? document.body}>
+            <div className={classNames(
+                cls.Modal,
+                mods,
+                [
+                    'app-modal',
+                    className,
+                    theme,
+                    toggleFeatures({
+                        name: 'isAppRedesigned',
+                        on: () => cls.modalNew,
+                        off: () => cls.modalOld,
+                    }),
+                ],
+            )}
+            >
                 <Overlay onClick={close} />
                 <div className={cls.content}>
                     {children}

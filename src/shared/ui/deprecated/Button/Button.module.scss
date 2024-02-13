@@ -1,16 +1,16 @@
 .Button {
+    cursor: pointer;
+    color: var(--primary-color);
     padding: 6px 15px;
 
-    color: var(--text-color);
-
-    &:hover:not(.disabled) {
-        opacity: 0.5;
-        cursor: pointer;
+    &:hover {
+        opacity: 0.8;
+        fill-opacity: 0.8;
+        stroke-opacity: 0.8;
     }
 }
 
-.clear,
-.clearInverted {
+.clear {
     padding: 0;
     border: none;
     background: none;
@@ -18,16 +18,20 @@
 }
 
 .clearInverted {
-    color: var(--text-color);
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+    color: var(--inverted-primary-color);
 }
 
 .outline {
-    border: 1px solid var(--text-color);
-    color: var(--text-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
     background: none;
 }
 
-.outlineRed {
+.outline_red {
     border: 1px solid var(--red-light);
     color: var(--red-light);
     background: none;
@@ -35,36 +39,33 @@
 
 .background {
     background: var(--bg-color);
-    color: var(--text-color);
+    color: var(--primary-color);
     border: none;
 }
 
 .backgroundInverted {
-    background: var(--second-bg-color);
-    color: var(--text-color);
+    background: var(--inverted-bg-color);
+    color: var(--inverted-primary-color);
     border: none;
 }
 
 .square {
     padding: 0;
+}
 
-    &.size_m {
-        width: var(--font-line-m);
-        height: var(--font-line-m);
-        font-size: var(--font-size-m);
-    }
+.square.size_m {
+    width: var(--font-line-m);
+    height: var(--font-line-m);
+}
 
-    &.size_l {
-        width: var(--font-line-l);
-        height: var(--font-line-l);
-        font-size: var(--font-size-l);
-    }
+.square.size_l {
+    width: var(--font-line-l);
+    height: var(--font-line-l);
+}
 
-    &.size_xl {
-        width: var(--font-line-xl);
-        height: var(--font-line-xl);
-        font-size: var(--font-size-xl);
-    }
+.square.size_xl {
+    width: var(--font-line-xl);
+    height: var(--font-line-xl);
 }
 
 .size_m {

@@ -1,21 +1,27 @@
-.starIcon {
-
-
-}
-// TODO исправить стили
-
-.starIcon:not(.isStroke), .starIcon path:not(.isStroke path) {
-    cursor: pointer;
+.StarRating {
+    .hovered {
+        fill: var(--primary-color);
+    }
 }
 
-.normal:not(.isStroke), .normal path:not(.isStroke path) {
+.StarRatingRedesigned {
+    .normal {
+        fill: none;
+    }
+
+    .hovered {
+        fill: var(--icon-redesigned);
+    }
+}
+
+.normal {
     fill: none;
 }
 
-.hovered:not(.isStroke), .hovered path:not(.isStroke path) {
-    fill: var(--text-color);
+.starIcon {
+    cursor: pointer;
 }
 
-.selected:not(.isStroke), .selected path:not(.isStroke path) {
+.selected {
     cursor: auto;
 }

@@ -732,13 +732,11 @@
       "features": {
         "isArticleRatingEnabled": true,
         "isCounterEnabled": true,
-        "isAppRedesigned": true
+        "isAppRedesigned": false
       },
       "jsonSettings": {
-        "theme": "app-light-theme",
-        "isFirstVisit": "true",
-        "settingsPageHasBeenOpen": "true",
-        "isArticlePageWasOpened": true
+        "isArticlePageWasOpened": true,
+        "theme": "app-light-theme"
       },
       "avatar": "https://bipbap.ru/wp-content/uploads/2022/11/1652235714_41-kartinkin-net-p-prikolnie-kartinki-dlya-stima-44.jpg"
     },
@@ -754,7 +752,7 @@
         "isCounterEnabled": false
       },
       "jsonSettings": {
-        "theme": "app-dark-theme",
+        "theme": "app-light-theme",
         "isArticlePageWasOpened": true
       },
       "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcoWP1oG6SbM819PChYaTqsypJ6-IamA8qvA&usqp=CAU"

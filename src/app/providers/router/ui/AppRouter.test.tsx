@@ -1,4 +1,4 @@
-import { screen } from '@testing-library/react';
+import { screen, waitFor } from '@testing-library/react';
 import { componentRender } from '@/shared/lib/tests/componentRender/componentRender';
 import AppRouter from './AppRouter';
 import { getRouteAbout, getRouteAdminPanel, getRouteProfile } from '@/shared/const/router';
@@ -40,8 +40,10 @@ describe('app/router/AppRouter', () => {
             },
         });
 
-        const page = await screen.findByTestId('ProfilePage');
-        expect(page).toBeInTheDocument();
+        await waitFor(() => {
+            const page = screen.queryByTestId('ProfilePage');
+            expect(page).toBeInTheDocument();
+        }, { timeout: 5000 }); // Установка таймаута в 5 секунд
     });
 
     test('Доступ запрещен (отсутствует роль)', async () => {

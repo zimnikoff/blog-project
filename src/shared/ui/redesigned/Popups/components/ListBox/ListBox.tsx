@@ -1,7 +1,7 @@
 import { Fragment, ReactNode, useMemo } from 'react';
 import { Listbox as HListBox } from '@headlessui/react';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { DropdownDirection } from '@/shared/types/ui';
+import { DropDownDirection } from '@/shared/types/ui';
 import { HStack } from '../../../../redesigned/Stack';
 import { Button } from '../../../Button/Button';
 import cls from './ListBox.module.scss';
@@ -23,7 +23,7 @@ interface ListBoxProps<T extends string> {
     defaultValue?: string;
     onChange: (value: T) => void;
     readonly?: boolean;
-    direction?: DropdownDirection;
+    direction?: DropDownDirection;
     label?: string;
 }
 
@@ -35,7 +35,7 @@ export function ListBox<T extends string>(props: ListBoxProps<T>) {
         defaultValue,
         onChange,
         readonly,
-        direction = 'bottom right',
+        direction = 'bottom-right',
         label,
     } = props;
 
@@ -58,14 +58,13 @@ export function ListBox<T extends string>(props: ListBoxProps<T>) {
                 value={value}
                 onChange={onChange}
             >
-                <HListBox.Button disabled={readonly} className={cls.trigger}>
-                    <Button
-                        variant="filled"
-                        disabled={readonly}
-                        addonRight={<Icon Svg={ArrowIcon} />}
-                    >
-                        {selectedItem?.content ?? defaultValue}
-                    </Button>
+                <HListBox.Button
+                    as={Button}
+                    variant="filled"
+                    disabled={readonly}
+                    addonRight={<Icon Svg={ArrowIcon} />}
+                >
+                    {selectedItem?.content ?? defaultValue}
                 </HListBox.Button>
                 <HListBox.Options
                     className={classNames(cls.options, {}, optionsClasses)}
